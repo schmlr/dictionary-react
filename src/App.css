@@ -1,10 +1,22 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 footer {
+  font-style: italic;
   margin: 20px;
   text-align: center;
 }
 
+a {
+  color: #5ea3a3;
+}
+
 .App-header {
-  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
 }
 
 .Logo {
