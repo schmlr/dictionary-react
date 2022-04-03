@@ -24,6 +24,7 @@ export default function Dictionary() {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleDictionaryResponse);
 
+        //documentation: https://www.pexels.com/api/documentation/
         let pexelsApiKey = "563492ad6f91700001000001f494627e65274255906c8c7b3e6534cf";
         let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
         let headers = { Authorization: `Bearer ${pexelsApiKey}` };
@@ -37,12 +38,12 @@ export default function Dictionary() {
     return (
         <div className="Dictionary">
             <section>
-            <h1>Which word do you want to look up?</h1>
-            <form onSubmit={search}>
-                <input type="search" placeholder="Enter a term" onChange={handleKeywordChange}></input>
-                <input type="submit" value="Search" className="search-button"></input>
-            </form>
-            <p className="example-terms">Suggestions: sunset, norway, dog, ...</p>
+                <h1>Which word do you want to look up?</h1>
+                <form onSubmit={search}>
+                    <input type="search" placeholder="Enter a term" onChange={handleKeywordChange}></input>
+                    <input type="submit" value="Search" className="search-button"></input>
+                </form>
+                <p className="example-terms">Suggestions: sunset, norway, dog, ...</p>
             </section>
             <Results results={results}/>
             <Photos photos={photos}/>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dictionary.css";
+import "./Examples.css";
 
 export default function Examples(props) {
     if (props.examples) {
@@ -7,9 +7,8 @@ export default function Examples(props) {
             <div className="Examples">
                 "{props.examples}"
             </div>
-            
         )
     } else {
         return null;
-    }   
+    }
 }

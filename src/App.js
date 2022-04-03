@@ -12,11 +12,11 @@ export default function App() {
         <Dictionary />
       </main>
       <footer>
-      <small>
-        Coded by Laura Schum, open-source code available on <a href="https://github.com/schmlr/weather-app-react" target="_blank" rel="noreferrer">GitHub</a>, and hosted on <a href="https://quiet-tapioca-cfcf7c.netlify.app" target="_blank" rel="noreferrer">Netlify</a>.
+        <small>
+        Coded by Laura Schum, open-source code available on <a href="https://github.com/schmlr/dictionary-react" target="_blank" rel="noreferrer">GitHub</a>, and hosted on <a href="https://quiet-tapioca-cfcf7c.netlify.app/" target="_blank" rel="noreferrer">Netlify</a>.
         </small>
       </footer>
-    </div>
+      </div>
     </div>
   );
 }

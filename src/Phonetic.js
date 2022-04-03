@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Icon } from "./sound-icon.svg";
-import "./Dictionary.css";
+import "./Phonetic.css";
 
 export default function Phonetic(props) {
     return (
