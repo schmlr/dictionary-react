@@ -12,15 +12,19 @@ export default function Meaning(props) {
         </h3>
 
         {props.meaning.definitions.map(function (definition, index) {
-            return (
-                <div key={index}>
-                    <div>
-                        <div className="Definitions">{definition.definition}</div>
-                        <Examples examples={definition.example} />
-                        <Synonyms synonyms={definition.synonyms} />
+            if (index < 3) {
+                return (
+                    <div key={index}>
+                        <div>
+                            <div className="Definitions">{index + 1}. {definition.definition}</div>
+                            <Examples examples={definition.example} />
+                            <Synonyms synonyms={definition.synonyms} />
+                        </div>
                     </div>
-                </div>
-            );
+                );
+              } else {
+                return null
+              }
         })}
     </div>
     );
